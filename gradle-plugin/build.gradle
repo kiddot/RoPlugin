@@ -11,6 +11,9 @@ dependencies {
     compile fileTree(dir: "./src/main/libs", include: ['*.jar'])
     compile project(':autopatchbase')
     compile 'org.ow2.asm:asm:5.0.1'
+    compile project(path: ':autopatchbase')
+    compile project(path: ':autopatchbase')
+    compile project(path: ':autopatchbase')
 }
 
 apply from: '../gradle_mvn_push.gradle'

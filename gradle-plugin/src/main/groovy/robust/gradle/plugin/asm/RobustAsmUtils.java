@@ -1,5 +1,7 @@
 package robust.gradle.plugin.asm;
 
+import com.meituan.robust.ChangeQuickRedirect;
+
 import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
@@ -14,7 +16,7 @@ import java.util.List;
 
 public class RobustAsmUtils {
     public final static String REDIRECTFIELD_NAME = "changeQuickRedirect";
-    public final static String REDIRECTCLASSNAME = Type.getDescriptor(com.meituan.robust.ChangeQuickRedirect.class);
+    public final static String REDIRECTCLASSNAME = Type.getDescriptor(ChangeQuickRedirect.class);
     public final static String PROXYCLASSNAME = "com.meituan.robust.PatchProxy".replace(".", "/");
 
     /**
